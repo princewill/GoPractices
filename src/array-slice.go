@@ -22,6 +22,30 @@ func main() {
 		}
 	}
 
-	
+	foo := make([]string, 3)
+	fmt.Println(foo)
+
+	foo[0] = "a"
+	foo[1] = "b"
+	foo[2] = "c"
+
+	foo = append(foo, "d")
+	fmt.Println(foo)
+
+	bar := make([]string, len(foo))
+	copy(foo, bar)
+	fmt.Println(bar)
+
+	l := bar[2:5]
+	fmt.Println("sl1:", l)
+
+	l = bar[:5]
+	fmt.Println("sl2:", l)
+
+	l = bar[2:]
+	fmt.Println("sl3:", l)
+
+	t := []string{"g", "h", "i"}
+	fmt.Println("dcl:", t)
 
 }
