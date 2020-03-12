@@ -2,9 +2,6 @@ package main
 
 import "fmt"
 
-
-import "fmt"
-
 func sum(nums ...int) {
 	fmt.Print(nums, " ")
 	total := 0
